@@ -113,7 +113,7 @@ En revanche, lorsque **plusieurs capteurs sont branchés et lus simultanément v
 
 - **ADC** : Résolution 12 bits, mode single-ended, calibration activée
 - **UART (LPUART1)** : Communication asynchrone
-- **TIMER2 (CH4)** : PWM activé pour générer un signal d’alimentation
+- **TIMER2 (CH4)** : PWM activé pour générer un signal de trigger pour le monostable
 - **Interruption UART** : Utilisée pour traiter les commandes utilisateurs en temps réel
 
 ---
