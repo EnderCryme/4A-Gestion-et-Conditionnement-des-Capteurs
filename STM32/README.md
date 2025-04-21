@@ -14,7 +14,7 @@ Ce projet permet de mesurer différents types de capteurs analogiques via l’AD
 | **PA7**      | `ADC_CHANNEL_7`                    | Lecture d’un montage **résistif**             |
 | **PB0**      | `ADC_CHANNEL_8` *(non utilisé ici)*| Lecture d’une **jauge de contrainte**         |
 | **PA3**      | `TIM2_CH4 (PWM)`                   | Alimentation **PWM** pour le montage capacitif |
-| **PA2/PA3**  | `LPUART1_TX / RX`                  | Communication UART (console série)            |
+| **PC4/PC5**  | `LPUART1_TX / RX`                  | Communication UART (console série)            |
 
 > **Note** : Pour le montage capacitif, connecter physiquement **PA3** (PWM) au circuit du capteur via un fil.
 
@@ -28,7 +28,7 @@ Ce projet permet de mesurer différents types de capteurs analogiques via l’AD
 | Bits de données    | `8`           |
 | Parité             | `Aucune`      |
 | Bits d'arrêt       | `1`           |
-| Pins utilisées     | `LPUART1_TX (PA2)` / `LPUART1_RX (PA3)` |
+| Pins utilisées     | `LPUART1_TX (PC4)` / `LPUART1_RX (PC5)` |
 
 ---
 
