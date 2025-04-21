@@ -46,6 +46,34 @@ Le timer TIM2 est configuré pour générer un signal PWM sur le **canal 4 (PA3)
 | Duty Cycle      | ~90% (Pulse = 572 / Period = 635) |
 | Mode            | `PWM1`                    |
 
+La fréquence du PWM est déterminée par la formule suivante :
+
+```
+f_PWM = f_APB / ((Prescaler + 1) × (ARR + 1))
+```
+Où :
+
+- `f_PWM` = fréquence de sortie souhaitée (en Hz)
+- `f_timer` = fréquence d’horloge du timer (en Hz)
+- `ARR` = Auto-reload register (aussi appelé "Period" dans CubeMX)
+- `Prescaler` = diviseur d’horloge appliqué avant le compteur
+
+#### Calcule de la fréquence:
+
+L’horloge du timer (APB1) est à 2.1 MHz ainsi on prend :
+
+```
+Prescaler = 0
+ARR = 635
+```
+
+Alors :
+
+```
+f_PWM = 2_100_000 / ((0 + 1) × (635 + 1)) = 2_100_000 / 636 ≈ 3,301 Hz
+```
+
+Ce réglage permet donc de générer une fréquence très proche de **3.3 kHz**, utilisée pour alimenter le montage capacitif via la broche **PA3**.
 ---
 
 ## Commandes UART disponibles
