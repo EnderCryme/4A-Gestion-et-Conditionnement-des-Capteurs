@@ -74,7 +74,8 @@ Mesure de PA7 (CH7) en cours...
 PA7 (CH7): 2987 (2.405 V)
 ```
 ❗ **Attention** : Lorsqu’un **seul capteur est connecté et lu**, les mesures ADC sont **cohérentes et fiables**.  
-En revanche, lorsque **plusieurs capteurs sont branchés et lus simultanément via le même ADC**, la lecture retourne systématiquement **la tension de référence Vref (≈3.3V)**. Cela peut être dû à un **manque de temps de stabilisation**, un **conflit de chemins analogiques**, ou une **configuration incomplète du multiplexer ADC**. Cependant, nous n'avons pas pu par manque de temps adressé cette problématique.
+En revanche, lorsque **plusieurs capteurs sont branchés et lus simultanément via le même ADC**, la lecture retourne systématiquement **la tension de référence Vref (≈3.3V)**. Cela peut être dû à un **manque de temps de stabilisation**, un **conflit de chemins analogiques**, ou une **configuration incomplète du multiplexer ADC**. 
+> Malheureusement, nous n'avons pas pu par manque de temps adressé cette problématique.
 
 ---
 
