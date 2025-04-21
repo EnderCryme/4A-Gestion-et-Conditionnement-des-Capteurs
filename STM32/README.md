@@ -16,6 +16,8 @@ Ce projet permet de mesurer différents types de capteurs analogiques via l’AD
 | **PA3**      | `TIM2_CH4 (PWM)`                   | Alimentation **PWM** pour le montage capacitif |
 | **PC4/PC5**  | `LPUART1_TX / RX`                  | Communication UART (console série)            |
 
+![Schéma de câblage](STM32/Cablage.png)
+
 > **Note** : Pour le montage capacitif, connecter physiquement **PA3** (PWM) au circuit du capteur via un fil.
 
 ---
