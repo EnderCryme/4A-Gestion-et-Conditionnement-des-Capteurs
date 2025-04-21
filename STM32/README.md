@@ -89,3 +89,10 @@ PA7 (CH7): 2987 (2.405 V)
 
 - Le canal **PB0 (ADC_CHANNEL_8)** est référencé dans le code mais n’est **pas implémenté** pour la lecture : il génère une erreur volontaire.
 - La calibration ADC est automatique au démarrage.
+- Le code actuel suppose une lecture analogique directe via l’ADC.  
+  --> Il **serait pertinent d’ajouter un mode de configuration** :
+  - **Astable** : utiliser un timer (en capture d’impulsions) pour mesurer la **fréquence d’oscillation** du montage.
+  - **Monostable** : maintenir l’usage de l’**ADC** pour lire une **valeur moyenne de tension**.
+- Cette fonctionnalité pourrait être activée via une **commande UART supplémentaire** (par exemple `m` pour monostable et `s` pour astable), et permettrait de s’adapter dynamiquement au type de capteur connecté.
+
+---
