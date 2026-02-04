@@ -1,5 +1,5 @@
 # A8_4PSM — Gestion et Conditionnement des Capteurs
-**Réalisé par V. Cauquil, A. Falada, T. Ghayad, K. Sabra**
+**Réalisé par V. Cauquil, A. Falad, T. Ghayad, K. Sabra**
 
 Ce dépôt regroupe l’intégralité du projet, de la simulation à la documentation, autour de la conception d’un système de gestion et de conditionnement pour capteurs (résistifs, capacitifs et jauges de contrainte), via des régulateurs, amplificateurs et circuits dédiés. La chaîne de conception — du PCB sous KiCad à la validation par simulation LTspice — s’accompagne d’un process salle blanche assurant précision et fiabilité.
 
